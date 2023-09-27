@@ -1,2 +1,9 @@
-# Proyecto-intro-1
-Repositorio donde se guarda el proyecto de año del grupo 14 de introducción a la ingeniería XD inte
+# Proyecto-Earthlove
+Repositorio donde se guarda el proyecto del año del grupo 14 (Los Chamaquitos) 
+de introducción a la ingeniería (Paralelo 2)
+
+Grupo compuesto por:
+- Amaro Vergara
+- Matías Acuña
+- Fabián González
+- Nicklaus Mejía.

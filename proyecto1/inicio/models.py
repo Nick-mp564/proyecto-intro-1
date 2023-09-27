@@ -1,7 +1,7 @@
 from django.db import models
 
 class User(models.Model):
-    name = models.CharField(max_length=50)
+    email = models.CharField(max_length=50)
     psw = models.CharField(max_length=20)
 
     def __str__(self):
@@ -9,6 +9,5 @@ class User(models.Model):
     
 class Publicacion(models.Model):
     title = models.CharField(max_length=50)
-    description = models.TextField()
-    compartidos = models.IntegerField()
-    
+    shared = models.IntegerField(default=0)
+    likes = models.IntegerField(default=0)

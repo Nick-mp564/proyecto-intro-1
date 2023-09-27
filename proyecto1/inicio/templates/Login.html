@@ -17,14 +17,14 @@
       <div class="card bg-body-secondary">
           <div class="card-body">
               <h5 class="card-title">Login</h5>
-              <form class="px-4 py-3">
+              <form method="post" class="px-4 py-3">
+                {% csrf_token %}
                 <div class="mb-3">
                   <label for="exampleDropdownFormEmail1" class="form-label">Dirección de correo electronico</label>
-                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+                  {{form.as_p}}
+                  <button>
+                    Iniciar Sesion
+                  </button>
                 </div>
                 <div class="mb-3">
                   <div class="form-check">
@@ -34,7 +34,6 @@
                     </label>
                   </div>
                 </div>
-                <button type="submit" href="/2" class="btn btn-primary">Iniciar Sesión</button>
               </form>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">¿No tienes cuenta?, Registrate</a>
